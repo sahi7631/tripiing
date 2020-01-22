@@ -1,0 +1,11 @@
+.workWrapper {
+    border-bottom: 2px solid #eee;
+}
+.workContainer {
+    margin-top: 20px;
+    padding-bottom: '10px'
+}
+.containerWrapper{
+    display: flex;
+    justify-content: 'space-around' 
+}

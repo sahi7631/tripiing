@@ -1,0 +1,13 @@
+.earn-withus-container{
+   border-bottom: 2px solid #eee;
+}
+.earn-withus-wrapper {
+    display: flex;
+    justify-content: space-around;
+    margin-top: 30px;
+    padding-bottom: 30px;
+}
+.textWrapper {
+    text-align: justify;
+    width: 700px;
+}

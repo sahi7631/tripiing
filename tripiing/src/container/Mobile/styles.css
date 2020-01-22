@@ -1,0 +1,31 @@
+.mobileContainer {
+    display: 'flex';
+    justify-content:  flex-start;
+    margin-top: 20px;
+    border-bottom: 2px solid #eee;
+}
+.descriptionContainer {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-around;
+    padding: 20px;
+}
+.textContainer {
+  text-align: justify;
+  width: 500px;
+}
+.imageContainer{
+    /* display: flex;
+    justify-content: center;
+    flex-direction: row; */
+    padding-top: 20px;
+    padding-bottom: 10px;
+}
+.listContainer {
+    display: flex;
+    justify-content: center;
+    flex-direction: row;
+}
+.listContainer-item {
+    border: 0px;
+}
