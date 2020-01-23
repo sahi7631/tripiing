@@ -15,33 +15,34 @@ class SearchContainer extends SearchContainerAbstract {
 
     render() {
         return (
-            <div className = "container">
-                <div style={{display: 'flex', justifyContent: 'flex-start', marginTop: '30px'}}>
-                    <div>
-                        <Select defaultValue="Jaipur" style={{ width: 100 }} onChange={this.handleChange}>
+            <div className="container">
+                <div className="row" style={{ padding: '20px', marginTop: '30px'}}>
+                    {/* <div className="col-sm-6">
+                        <Select defaultValue="Jaipur" size="large" onChange={this.handleChange}>
+                            <Option value="Jaipur">Jaipur</Option>
+                        </Select>
+                    </div> */}
+                    <div className="col-sm-12" style={{ textAlign: 'center' }}>
+                        <h1>Welcome to  Tripiing</h1>
+                    </div>
+                </div>
+                <div className="row" style={{ backgroundColor: '#fff', padding: '30px', borderRadius: '10px', marginTop: '100px' }}>
+                    <div className="col-sm-3">
+                        <Select defaultValue="Jaipur" size="large" style={{ width: '100%' }} onChange={this.handleChange}>
                             <Option value="Jaipur">Jaipur</Option>
                         </Select>
                     </div>
-                    <div style = {{ margin: 'auto'}}>
-                        <h1>Welcome to  Triping</h1>
+                    <div className="col-sm-3">
+                        <DatePicker onChange={this.onChange} size="large" style={{ width: '100%' }} showTime placeholder="Start Date & Time" />
                     </div>
-                </div>
-                <div style={{ display: 'flex', justifyContent: 'space-around', marginTop: '50px'}}>
-                    <div style={{ height: '70px', display: 'flex', justifyContent: 'space-around', padding: '10px', width: '100%' }}>
-                        <div style={{ display: 'flex', flexDirection: 'row', }}>
-                            <div style={{ width: '40%' }}>
-                                <DatePicker onChange={this.onChange} size="large" showTime placeholder="Start Date & Time" />
-                            </div>
-                            <div style={{ width: '40%' }}>
-                                <DatePicker onChange={this.onChange} size="large" showTime placeholder="End Date & Time" />
-                            </div>
-                            <div style={{ width: '10%' }}>
-                                <Button type="primary" size="large" >
-                                    Search
+                    <div className="col-sm-3">
+                        <DatePicker onChange={this.onChange} size="large" style={{ width: '100%' }} showTime placeholder="End Date & Time" />
+                    </div>
+                    <div className="col-sm-3">
+                        <Button type="primary" size="large" style={{ width: '70%' }}>
+                            Search
                                 <Icon type="arrow-right" />
-                                </Button>
-                            </div>
-                        </div>
+                        </Button>
                     </div>
                 </div>
             </div>

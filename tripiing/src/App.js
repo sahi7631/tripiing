@@ -10,26 +10,27 @@ import Subscribe from './container/Subscribe';
 import Footer from './container/Footer';
 import Mobile from './container/Mobile';
 
-
 class App extends Component {
   render() {
     return (
       <div className="App">
-        <div>
-          <Header></Header>
+        <div className = "headerContainer">
+          <div>
+            <Header></Header>
+          </div>
+          <div>
+            <Search></Search>
+          </div>
         </div>
-        <div>
-          <Search></Search>
-        </div>
-        <div>
+        {/* <div>
           <WhyUs></WhyUs>
         </div>
         <div>
           <Work></Work>
-        </div>
-        <div>
+        </div> */}
+        {/* <div>
           <City></City>
-        </div >
+        </div > */}
         <div>
           <EarnWithUs></EarnWithUs>
         </div>

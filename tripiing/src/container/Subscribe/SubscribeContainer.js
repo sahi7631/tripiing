@@ -9,18 +9,20 @@ class SubscribeContainer extends SubscribeContainerAbstract {
     }
     render() {
         return (
-            <div style={{ display: 'flex', justifyContent: 'space-around', marginTop: '40px', padding: '30px' }}>
-                <div>
-                    <h2>Subscribe Us </h2>
-                    <p> Subscribe Tripiing to get latest offers and deals to day .</p>
-                </div>
-                <div>
-                    <Search
-                        placeholder="Enter Your Email"
-                        enterButton="Submit"
-                        size="large"
-                        onSearch={value => console.log(value)}
-                    />
+            <div className="container" style = {{ paddingTop: '50px', paddingBottom: '30px'}}>
+                <div className="row">
+                    <div className="col-sm-6">
+                        <h2>Subscribe Us </h2>
+                        <p> Subscribe Tripiing to get latest offers and deals to day .</p>
+                    </div>
+                    <div className="col-sm-6">
+                        <Search
+                            placeholder="Enter Your Email"
+                            enterButton="Submit"
+                            size="large"
+                            onSearch={value => console.log(value)}
+                        />
+                    </div>
                 </div>
             </div>
         )
