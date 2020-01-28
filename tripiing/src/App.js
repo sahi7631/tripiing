@@ -22,10 +22,10 @@ class App extends Component {
             <Search></Search>
           </div>
         </div>
-        {/* <div>
+        <div>
           <WhyUs></WhyUs>
         </div>
-        <div>
+        {/* <div>
           <Work></Work>
         </div> */}
         {/* <div>
