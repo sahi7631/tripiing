@@ -8,6 +8,7 @@ import App from './App';
 import About from './container/About';
 import Login from './container/Login';
 import Contact from './container/Contact';
+import CarList from './container/CarListContainer'
 
 const AppRouter = () => {
     return (
@@ -22,8 +23,11 @@ const AppRouter = () => {
                 <Route path="/contact">
                   <Contact/>
                 </Route>
-                <Route exact path="/login">
+                <Route  path="/login">
                     <Login />
+                </Route>
+                <Route  path="/carlist">
+                    <CarList />
                 </Route>
             </Switch>
         </Router>

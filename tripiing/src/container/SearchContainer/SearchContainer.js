@@ -2,6 +2,7 @@ import React from 'react';
 import SearchContainerAbstract from './SeachContainerAbsract';
 import { Button, DatePicker, Icon } from 'antd';
 import { Select } from 'antd';
+import { Route } from 'react-router-dom';
 const { Option } = Select;
 
 class SearchContainer extends SearchContainerAbstract {
@@ -16,12 +17,7 @@ class SearchContainer extends SearchContainerAbstract {
     render() {
         return (
             <div className="container">
-                <div className="row" style={{ padding: '20px', marginTop: '30px'}}>
-                    {/* <div className="col-sm-6">
-                        <Select defaultValue="Jaipur" size="large" onChange={this.handleChange}>
-                            <Option value="Jaipur">Jaipur</Option>
-                        </Select>
-                    </div> */}
+                <div className="row" style={{ padding: '20px', marginTop: '30px' }}>
                     <div className="col-sm-12" style={{ textAlign: 'center' }}>
                         <h1>Welcome to  Tripiing</h1>
                     </div>
@@ -39,10 +35,11 @@ class SearchContainer extends SearchContainerAbstract {
                         <DatePicker onChange={this.onChange} size="large" style={{ width: '100%' }} showTime placeholder="End Date & Time" />
                     </div>
                     <div className="col-sm-3">
-                        <Button type="primary" size="large" style={{ width: '70%' }}>
-                            Search
+                        <Route render={({ history }) => (
+                            <Button type="primary" size="large" style={{ width: '70%' }} onClick={() => history.push('/carlist')} >
+                                Search
                                 <Icon type="arrow-right" />
-                        </Button>
+                            </Button>)} />
                     </div>
                 </div>
             </div>

@@ -12,6 +12,7 @@ class SearchContainerAbstract extends React.PureComponent {
     onChange = () => {
 
     }
+ 
     render() {
         return null;
     }
