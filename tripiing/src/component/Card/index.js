@@ -1,28 +1,32 @@
 import React from 'react';
+import { Card } from 'antd';
+import { Rate } from 'antd';
+import { Button } from 'antd';
+const { Meta } = Card;
 
-const Card = (props) => {
+const CardComponent = (props) => {
     return (
-        <div className="row">
-            <div className="container">
-                <div className="row">
-                    <div className="col-sm-3">
-                    <div class="panel panel-default">
-                            <div class="panel-body">  <h1>{props.name}</h1></div>
+        <div className="col-sm-12" style={{ marginBottom: 20 }}>
+            <div className="row">
+                <Card
+                    hoverable
+                    style={{ width: '100%', height: 202 }}
+                    cover={<img alt="example" className="col-sm-4" src={props.details.images} style={{ width: '30%', height: 200, margin: '0px', padding: '0px' }} />}
+                >
+                    <div className="col-sm-5">
+                        <div style = {{ paddingLeft: '30px'}}>
+                            <h3>{props.details.name}</h3>
+                            <p><Rate disabled defaultValue={props.details.rating} /> <span><strong>{props.details.trip} trips </strong></span></p>
+                            <p><strong> &#8377; {props.details.price} / Days </strong></p>
+                            <p><span class="glyphicon glyphicon-tag" style = {{ marginRight: '15px'}}></span>Click here to check offer and discount </p>
                         </div>
                     </div>
                     <div className="col-sm-3">
-                        <div class="panel panel-default">
-                            <div class="panel-body">  <h1>{props.name}</h1></div>
-                        </div>
+                      <Button  size = "large" type="danger" style = {{ marginTop: 120, width: '100%'}}>Book Now</Button>
                     </div>
-                    <div className="col-sm-3">
-                    <div class="panel panel-default">
-                            <div class="panel-body">  <h1>{props.name}</h1></div>
-                        </div>
-                    </div>
-                </div>
+                </Card>
             </div>
         </div>
     )
 }
-export default Card;
+export default CardComponent;

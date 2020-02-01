@@ -14,13 +14,16 @@ class MobileContainer extends MobileContainerAbstract {
                     <div className="row">
                         <div className="col-sm-6 textContainer">
                             <h3>Now Start Triping with Mobile</h3>
-                            <p>Lorem Ipsum is simply dummy text of the printing and typesetting industry.
-                                Lorem Ipsum has been the industry's standard dummy text ever since the 1500s,
-                                when an unknown printer took a galley of type and scrambled it to make a type specimen book.
-                                It has survived not only five centuries, but also the leap into electronic typesetting, remaining essentially unchanged.
-                                It was popularised in the 1960s with the release of Letraset sheets containing Lorem Ipsum passages,
-                                and more recently with desktop publishing software like Aldus PageMaker including versions of Lorem Ipsum.
-                                </p>
+                            <p>
+                                Need a quick trip companion? Just rent a car from Tripiing and self drive the car.<br/>
+                                All you are required to do is:
+                            </p>
+                            <ul>
+                                <li>Download the Tripiing app from either Apple App Store or Google Play Store</li>
+                                <li>Select your desired car model</li>
+                                <li>Book your car for where and when you need it</li>
+                                <li>End your booking right from our app</li>
+                            </ul>
                         </div>
                         <div className="col-sm-6">
                             <img src={backimage} />

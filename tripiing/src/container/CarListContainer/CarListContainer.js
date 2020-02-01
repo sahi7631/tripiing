@@ -2,7 +2,7 @@ import React from 'react';
 import CarListContainerAbstract from './CardListAbstractContainer';
 import Header from '../Header';
 import Footer from '../Footer';
-import Card from '../../component/Card';
+import CardComponent from '../../component/Card';
 import { Select, Input } from 'antd';
 import { Checkbox, Row, Col } from 'antd';
 import { Collapse } from 'antd';
@@ -19,7 +19,7 @@ class CarListContainer extends CarListContainerAbstract {
     render() {
         let carlist = this.state.list.map(item => {
             return (
-                <Card name={item.name} />
+                <CardComponent details={item} />
             )
         });
         return (
@@ -109,7 +109,9 @@ class CarListContainer extends CarListContainerAbstract {
                             </Collapse>
                         </div>
                             <div className="col-sm-9">
-                                {carlist}
+                                <div className = "row" style= {{ marginBottom:  20}}>
+                                    {carlist}
+                                </div>
                             </div>
                         </div>
                     </div>
