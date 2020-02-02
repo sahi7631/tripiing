@@ -73,6 +73,10 @@ class CarListContainerAbstract extends React.PureComponent {
     handleChange = (value) => {
         console.log(`selected ${value}`);
     }
+    
+    onShowSizeChange = (current, pageSize) => {
+        console.log(current, pageSize);
+    }
 
     render() {
         return null;

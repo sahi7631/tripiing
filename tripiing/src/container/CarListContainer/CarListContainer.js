@@ -44,7 +44,7 @@ class CarListContainer extends CarListContainerAbstract {
                     </div>
                     <div className="row" style={{ marginTop: '20px' }}>
                         <div className="col-sm-3">
-                            <Collapse onChange={this.callback} expandIconPosition="right" defaultActiveKey={['1', '2']}>
+                            <Collapse onChange={this.callback} expandIconPosition="right" defaultActiveKey={['1', '2']} >
                                 <Panel header="SEARCH BY BRAND OR MODEL" key="1">
                                     <Search
                                         placeholder="Search Brand"

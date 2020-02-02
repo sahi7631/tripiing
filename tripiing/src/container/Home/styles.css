@@ -1,0 +1,7 @@
+.headerContainer {
+    background-image: url('../../images/headercontainer.jpeg');
+    height: 550px;
+    background-clip: padding-box;
+    background-size: cover;
+    border-bottom: 2px solid #ccc;
+ }  
