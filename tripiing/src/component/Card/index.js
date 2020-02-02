@@ -2,7 +2,7 @@ import React from 'react';
 import { Card } from 'antd';
 import { Rate } from 'antd';
 import { Button } from 'antd';
-const { Meta } = Card;
+import { Route } from 'react-router-dom';
 
 const CardComponent = (props) => {
     return (
@@ -22,7 +22,9 @@ const CardComponent = (props) => {
                         </div>
                     </div>
                     <div className="col-sm-3">
-                      <Button  size = "large" type="danger" style = {{ marginTop: 120, width: '100%'}}>Book Now</Button>
+                    <Route render={({ history }) => (
+                            <Button  size = "large" type="danger" style = {{ marginTop: 120, width: '100%'}} onClick={() => history.push('/checkout')}>Book Now</Button>
+                            )} />
                     </div>
                 </Card>
             </div>
