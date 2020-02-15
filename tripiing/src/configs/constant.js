@@ -2,6 +2,7 @@ export const DEFAULT_ACTION = 'DEFAULT_ACTION';
 export const GET_REQUEST = 'GET_REQUEST';
 export const POST_REQUEST = 'POST_REQUEST';
 export const DELETE_REQUEST = 'DELETE_REQUEST';
+export const UPDATE_REQUEST = 'UPDATE_REQUEST';
 export const SET_USER_DETAILS = 'SET_USER_DETAILS';
 export const SET_USER_STORE = 'SET_USER_STORE';
 export const LOGIN = 'LOGIN';

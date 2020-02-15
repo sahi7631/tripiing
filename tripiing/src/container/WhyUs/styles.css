@@ -1,0 +1,26 @@
+.w-container {
+    font-family: monospace;
+    color: #000;
+    padding-bottom: 30px;
+}
+.w-title {
+    font-weight: 400;
+    margin-top: 50px;
+    padding-bottom: 20px;
+    text-align: center;
+}
+.w-subtitle {
+    margin-bottom: 20px;
+    font-size: 20px;
+    text-align: left;
+    text-transform: capitalize;
+    text-justify: auto;
+}
+.w-image {
+    height: 170px;
+    margin: auto;
+    width: 200px;
+}
+.w-desc {
+    color: #000;
+}

@@ -17,22 +17,24 @@ class HomeContainer extends HomeContainerAbstract {
     }
     render() {
         return (
-            <div>
                 <div>
-                    <div className="headerContainer">
-                        <div>
-                            <Header></Header>
-                        </div>
-                        <div>
-                            <Search></Search>
-                        </div>
-                    </div>
+                    <div className="maincontainer">
+                        <Header></Header>
+                        <Search></Search>
+                    </div> 
                     <WhyUs></WhyUs>
+                    <City></City>
+
                     <EarnWithUs></EarnWithUs>
                     <Mobile></Mobile>
-                    <Subscribe></Subscribe>
+                   <Subscribe></Subscribe> 
                     <Footer />
-                </div>        
+
+                    {/* <div>
+                           
+                        </div>
+                    </div>
+                    <Work></Work> */}
             </div>
         )
     }

@@ -1,0 +1,56 @@
+.title {
+    color:#fff;
+    font-size: 40px;
+    font-family: monospace;
+    text-transform: capitalize;
+    text-align: center;
+}
+.sub-title {
+    color: #fff;
+    font-size: 20px;
+    font-family: monospace;
+    text-transform: capitalize;
+    text-align: center;
+}
+.selectorConatiner {
+    display: flex;
+}
+.selector {
+    width: 40%;
+}
+.buttonSelector {
+    width: 10%;
+}
+.daySelector {
+    border-right: 1px solid #ccc;
+}
+.calanderStyle {
+    width: 350px;
+    height: 300px;
+}
+.dayStyle {
+    font-size: 20px;
+}
+.ant-calendar-picker-input.ant-input {
+    border-radius: 0px;
+    height: 60px;
+    border: 0px;
+  }
+  .ant-time-picker-input{
+    border-radius: 0px;
+    height: 60px;
+    border: 0px;
+  }
+  .ant-select-selection-selected-value {
+    border-radius: 0px;
+    height: 60px;
+    padding-top: 5px;
+    padding-bottom: 5px;
+  }
+  
+  .ant-select-selection.ant-select-selection--single {
+    height: 60px;
+    padding-top: 0px;
+    padding-bottom: 0px;
+    border-radius: 0px;
+  }

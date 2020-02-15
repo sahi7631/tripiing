@@ -4,10 +4,8 @@ import './index.css';
 import App from './App';
 import registerServiceWorker from './registerServiceWorker';
 import { Provider } from 'react-redux';
-import { createStore } from 'redux';
-import appDetailsReducer from './reducer/appDetailsReducer';
-
-const store = createStore(appDetailsReducer);
-
-ReactDOM.render(<Provider store = {store}><App/></Provider>, document.getElementById('root'));
+import { createStore, applyMiddleware } from 'redux';
+import apiCallReducer from './reducer/reducer';
+const store  = createStore(apiCallReducer);
+ReactDOM.render(<Provider store={store}><App /></Provider>, document.getElementById('root'));
 registerServiceWorker();

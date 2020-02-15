@@ -12,8 +12,9 @@ class SubscribeContainer extends SubscribeContainerAbstract {
             <div className="container" style = {{ paddingTop: '50px', paddingBottom: '30px'}}>
                 <div className="row">
                     <div className="col-sm-6">
-                        <h2>Subscribe Us </h2>
-                        <p> Subscribe Tripiing to get latest offers and deals to day .</p>
+                        <h2>Stay updated to offers and everything else on Tripiing</h2>
+                        <p style = {{ color:'#000', textAlign: 'justify', marginTop: '40px'}}>By subscribing to our email newsletter, you are granting permission Tripiing to stay connected to you via email.
+                        You may unsubscribe via the link found at the bottom of every email. See our Email Privacy Policy (//hperlink) for details</p>
                     </div>
                     <div className="col-sm-6">
                         <Search
@@ -21,6 +22,7 @@ class SubscribeContainer extends SubscribeContainerAbstract {
                             enterButton="Submit"
                             size="large"
                             onSearch={value => console.log(value)}
+                            style = {{ marginTop: '30px'}}
                         />
                     </div>
                 </div>

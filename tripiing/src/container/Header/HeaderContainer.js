@@ -1,7 +1,8 @@
 import React from 'react';
 import HeaderContainerAbstract from './HeaderContainerAbstract';
-import { Link } from "react-router-dom";
+import { NavLink } from "react-router-dom";
 import logo from '../../images/logo.png';
+import './style.css';
 
 class HeaderContainer extends HeaderContainerAbstract {
     constructor(props) {
@@ -9,8 +10,8 @@ class HeaderContainer extends HeaderContainerAbstract {
     }
     render() {
         return (
-            <div style={{ display: 'flex', justifyContent: 'center', marginTop: '50px' }}>
-                <nav className="navbar navbar-default navbar-fixed-top">
+            <div>
+                <nav className="navbar navbar-default navbar-fixed-top" style = {{ padding: '10px'}}>
                     <div className="container-fluid">
                         <div className="navbar-header">
                             <button type="button" className="navbar-toggle" data-toggle="collapse" data-target="#myNavbar">
@@ -18,18 +19,17 @@ class HeaderContainer extends HeaderContainerAbstract {
                                 <span className="icon-bar"></span>
                                 <span className="icon-bar"></span>
                             </button>
-                            <a className="navbar-brand" href="#myPage">
-                              <img src = {logo}  style = {{ height: '30px'}}/>
-                            </a>
+                            <NavLink className="navbar-brand" to="/">
+                              <img src = {logo} style = {{ height: '30px'}}/>
+                            </NavLink>
                         </div>
-
                         <div className="collapse navbar-collapse" id="myNavbar">
-                            <ul className="nav navbar-nav navbar-right">
-                                <li><a href="/">HOME</a></li>
-                                <li><a href="/earnwithus">EARN WITH US</a></li>
-                                <li><Link to="/offers">OFFERS</Link></li>
-                                <li><Link to="/mobileapp">MOBILE APP</Link></li>
-                                <li><a href="/login">LOGIN</a></li>
+                            <ul className="nav navbar-nav navbar-right" >
+                                <li className="text-bold"><NavLink to="/" activeClassName="active">HOME </NavLink> </li>
+                                <li className="text-bold"><NavLink to="/earnwithus" activeClassName="active"  activeStyle = {{ color: 'pink'}}>EARN WITH US </NavLink></li>
+                                <li className="text-bold"><NavLink to="/offers" activeClassName="active"  activeStyle = {{ color: 'pink'}}>OFFERS</NavLink></li>
+                                <li className="text-bold"><NavLink to="/mobileapp" activeClassName="active"  activeStyle = {{ color: 'pink'}}>MOBILE APP</NavLink></li>
+                                <li className="text-bold"><NavLink to="/login"  activeStyle = {{ color: 'pink'}}>LOGIN</NavLink></li>
                             </ul>
                         </div>
                     </div>

@@ -1,6 +1,5 @@
 import React from 'react';
 import { Input, Button, Icon } from 'antd';
-import { loginContainer } from './style';
 import Header from '../Header';
 import Footer from '../Footer';
 
@@ -16,10 +15,10 @@ class LoginContainer extends React.Component {
                     <div>
                         <div style={{ display: 'flex', flexDirection: 'column', alignItems: 'flex-start' }}>
                             <label> Mobile No: </label>
-                            <Input size="large" placeholder="Mobile No." />
+                            <Input size="large" placeholder="Mobile No." onChange = {(usr) => this.setState({ username: usr})} />
                             <label> Password: </label>
-                            <Input size="large" placeholder="Password" />
-                            <Button type="primary" style={{ marginTop: '30px', width: '100%' }}> Login</Button>
+                            <Input size="large" placeholder="Password" onChange = {(pwd) =>  this.setState({ password: pwd})} />
+                            <Button type="primary" style={{ marginTop: '30px', width: '100%' }} onClick= {this.onLogin}> Login</Button>
                         </div>
                     </div>
                     <div>

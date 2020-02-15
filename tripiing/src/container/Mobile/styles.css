@@ -1,9 +1,30 @@
-.mobileContainer {
-    display: 'flex';
-    justify-content:  flex-start;
+.m-container {
+    padding-top: 40px;
     margin-top: 20px;
-    border-bottom: 2px solid #eee;
+    padding-bottom: 20px;
+    border-bottom: 2px solid #ccc;
+    border-top: 2px solid #ccc;
 }
+.m-title {
+  font-size: 30px;
+}
+.m-subtitle {
+  font-size: 18px;
+  color: #000;
+  text-align: justify;
+  text-transform: capitalize;
+  margin-top: 40px;
+}
+.m-list-c {
+    list-style-type: circle;
+    color: #000;
+    font-size: 18px;
+    margin-top: 40px;
+}
+.m-mgcenter {
+    margin: auto;
+}
+
 .descriptionContainer {
     display: flex;
     flex-direction: row;

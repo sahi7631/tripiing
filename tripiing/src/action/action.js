@@ -35,43 +35,43 @@ export function setUserDetails(data) {
   };
 }
 
-export function setUserLanguage(data, callback) {
-  return {
-    type: C.SET_USER_LANGUAGE,
-    data,
-    callback,
-  };
-}
+// export function setUserLanguage(data, callback) {
+//   return {
+//     type: C.SET_USER_LANGUAGE,
+//     data,
+//     callback,
+//   };
+// }
 
 
-export function updateUserLanguage(data) {
-  return {
-    type: C.UPDATE_USER_LANGUAGE,
-    data,
-  };
-}
+// export function updateUserLanguage(data) {
+//   return {
+//     type: C.UPDATE_USER_LANGUAGE,
+//     data,
+//   };
+// }
 
-export function updateLoadingState(data) {
-  return {
-    type: C.UPDATE_LOADING_STATE,
-    data,
-  };
-}
+// export function updateLoadingState(data) {
+//   return {
+//     type: C.UPDATE_LOADING_STATE,
+//     data,
+//   };
+// }
 
-export function setAppError(data) {
-  return {
-    type: C.SET_APP_ERROR,
-    data,
-  };
-}
+// export function setAppError(data) {
+//   return {
+//     type: C.SET_APP_ERROR,
+//     data,
+//   };
+// }
 
 
-export function setAppConfig(data) {
-  return {
-    type: C.SET_APP_CONFIG,
-    data,
-  };
-}
+// export function setAppConfig(data) {
+//   return {
+//     type: C.SET_APP_CONFIG,
+//     data,
+//   };
+// }
 
 
 export function logout() {

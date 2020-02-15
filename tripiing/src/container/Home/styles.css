@@ -1,6 +1,6 @@
-.headerContainer {
+.maincontainer {
     background-image: url('../../images/headercontainer.jpeg');
-    height: 550px;
+    height: 900px;
     background-clip: padding-box;
     background-size: cover;
     border-bottom: 2px solid #ccc;
